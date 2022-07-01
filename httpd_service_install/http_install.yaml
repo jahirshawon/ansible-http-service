@@ -22,5 +22,5 @@
   - name: copy content for http server
     copy:
       src: /mnt/index.html #if you want to copy file from mapped directory
-#     content: "welcome to hello world" (if you want to input any content)
+#     content: "welcome to hello world" ##(if you want to input any content)
       dest: /var/www/html/
