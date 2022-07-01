@@ -1,0 +1,24 @@
+First task:
+   here we install a http package which we define in verable section 
+Second Task: 
+   here we start the service and enable service for startup
+Third Task:
+   here we allow the httpd service on firewalld
+Forth Task:
+   here we add content or mapped content from persistent volume 
+ 
+** Run this command for checking the syntax on playbook. if there have an any indentation error we can check with the command
+ 
+   ansible-playbook http_install.yaml --syntax-check
+ 
+ ** Run this command . this command allow the playbook to execute a precheck Dry Run . Dry run help us to execute the playbook instruction on nodes on temporary pre check.
+ 
+ ansible-playbook -C http_install.yaml
+ 
+ ** Run this commond and it executes our defined task on playbook .after completing the task we can verify task status from host machine and browser
+ 
+ ansible-playbook  http_install.yaml
+ 
+ *** verift ***
+ hostip:port
+ 192.168.0.120:80 
